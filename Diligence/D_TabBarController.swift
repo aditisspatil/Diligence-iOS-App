@@ -14,7 +14,7 @@ class D_TabBarViewController: UITabBarController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        view.backgroundColor = .systemBlue
+        view.backgroundColor = .darkGray
         UITabBar.appearance().barTintColor = .black
         tabBar.tintColor = .label
         
@@ -26,10 +26,9 @@ class D_TabBarViewController: UITabBarController {
     func setupVCs() {
         viewControllers = [
             createNavController(for: ViewController(), title: NSLocalizedString("Home", comment: ""), image: UIImage(systemName: "house")!),
-            createNavController(for: ViewController(), title: NSLocalizedString("Profile", comment: ""), image: UIImage(systemName: "person")!),
-            createNavController(for: ViewController(), title: NSLocalizedString("Profile", comment: ""), image: UIImage(systemName: "person")!),
-            createNavController(for: ViewController(), title: NSLocalizedString("Profile", comment: ""), image: UIImage(systemName: "person")!),
-            createNavController(for: ViewController(), title: NSLocalizedString("Profile", comment: ""), image: UIImage(systemName: "person")!)
+            createNavController(for: ViewController(), title: NSLocalizedString("Record", comment: ""), image: UIImage(systemName: "circle.circle")!),
+            createNavController(for: ViewController(), title: NSLocalizedString("Progrss", comment: ""), image: UIImage(systemName: "chart.line.uptrend.xyaxis")!),
+            createNavController(for: ViewController(), title: NSLocalizedString("Settings", comment: ""), image: UIImage(systemName: "gearshape")!)
         ]
     }
     
